@@ -1,0 +1,1079 @@
+import 'package:flutter/material.dart';
+
+// ignore: depend_on_referenced_packages
+void main() {
+  runApp(const Cardedekho());
+}
+
+class Cardedekho extends StatelessWidget {
+  const Cardedekho({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: "CAR DEKHO",
+      home: Website(),
+    );
+  }
+}
+
+class Website extends StatefulWidget {
+  const Website({super.key});
+
+  @override
+  State<Website> createState() => _WebsiteState();
+}
+
+class _WebsiteState extends State<Website> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              "Cars Karkhana",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "We Compare Cars From Over 100 Sites for Best Deal",
+              style: TextStyle(color: Colors.blueAccent, fontSize: 14),
+            ),
+          ],
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 20),
+            child: Row(
+              children: [
+                const Text(
+                  "Hi Shailesh & Ansh",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20),
+                ),
+                const SizedBox(width: 20),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.person),
+                ),
+              ],
+            ),
+          ),
+        ],
+        backgroundColor: Colors.white24,
+      ),
+      backgroundColor: Colors.white,
+      body: Container(
+        padding: EdgeInsets.all(80),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Divider(
+                color: Colors.black,
+                thickness: 1,
+                indent: 0,
+                endIndent: 0,
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                "How it Works",
+                style: TextStyle(
+                    color: Colors.lightBlueAccent,
+                    fontSize: 35,
+                    fontWeight: FontWeight.w600),
+              ),
+              const SizedBox(height: 15),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    height: 120,
+                    width: 280,
+                    color: Colors.greenAccent,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 30,
+                              width: 30,
+                              decoration: const BoxDecoration(
+                                color: Colors.black87,
+                                shape: BoxShape.circle,
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  "1",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 16),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                                width: 10), // Spacing between circle and text
+                            const Text(
+                              "Enter Car Details",
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 16),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(
+                            height:
+                                10), // Spacing between the Row and the next text
+                        const Text(
+                          "Fill in your car's Specifications and Preferences",
+                          style: TextStyle(color: Colors.pink, fontSize: 14),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 3,
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    height: 120,
+                    width: 280,
+                    color: Colors.greenAccent,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 30,
+                              width: 30,
+                              decoration: const BoxDecoration(
+                                color: Colors.black87,
+                                shape: BoxShape.circle,
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  "2",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 16),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                                width: 10), // Spacing between circle and text
+                            const Text(
+                              "Get Compared Results",
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 16),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(
+                            height:
+                                10), // Spacing between the Row and the next text
+                        const Text(
+                          "We analyze thousands of listings instantly",
+                          style: TextStyle(color: Colors.pink, fontSize: 14),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 3,
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    height: 120,
+                    width: 280,
+                    color: Colors.greenAccent,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 30,
+                              width: 30,
+                              decoration: const BoxDecoration(
+                                color: Colors.black87,
+                                shape: BoxShape.circle,
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  "3",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 16),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                                width: 10), // Spacing between circle and text
+                            const Text(
+                              "Make Informed Decision",
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 16),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(
+                            height:
+                                10), // Spacing between the Row and the next text
+                        const Text(
+                          "Choose the best deal with confidence",
+                          style: TextStyle(color: Colors.pink, fontSize: 14),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                padding: const EdgeInsets.all(9.5),
+                height: 480,
+                decoration: BoxDecoration(
+                  color: Colors.blue.shade50,
+                  border: Border.all(color: Colors.black),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.directions_car, // Car rental icon
+                          size: 27.7, // Increase size to 40
+                          color: Colors
+                              .black87, // Optional: Set the color of the icon
+                        ),
+                        SizedBox(
+                          width: 7,
+                        ),
+                        Text(
+                          "Enter Your Car Details",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 22,
+                              backgroundColor: Colors.white24,
+                              color: Colors.lightBlue),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          // mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              " Basic Information",
+                              style: TextStyle(
+                                  color: Colors.deepOrange[300],
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Brand",
+                                  hintText: "e.g., Toyota",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 17,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Model",
+                                  hintText: "e.g., Camry",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 17,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Year",
+                                  hintText: "e.g., 2022",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 17,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Variant",
+                                  hintText: "e.g., XLE",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Column(
+                          // mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              " Technical Specifications",
+                              style: TextStyle(
+                                  color: Colors.deepOrange[300],
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Fuel Type",
+                                  hintText: "Select Fuel Type",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 17,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Transmission",
+                                  hintText: "Select Transmission",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 17,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Engine (CC)",
+                                  hintText: "e.g., 2000",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 17,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Mileage (kmpl)",
+                                  hintText: "e.g., 15",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Column(
+                          // mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Additional Information",
+                              style: TextStyle(
+                                  color: Colors.deepOrange[300],
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Color",
+                                  hintText: "e.g., Silver, White",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 17,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Kilometers Driven",
+                                  hintText: "e.g., 50000",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 17,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Expected Price (₹)",
+                                  hintText: "e.g., 5 Lks-10 Lks",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 17,
+                            ),
+                            SizedBox(
+                              height: 35,
+                              width: 200,
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  labelText: "Location",
+                                  hintText: "e.g., Delhi",
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.black),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    // startup
+                    SizedBox(
+                      height: 80,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.all(10),
+                          width: 250, // Adjusted width for better visibility
+                          height: 60,
+                          decoration: BoxDecoration(
+                            color: Colors.blue
+                                .shade50, // Background color for the container
+                            borderRadius:
+                                BorderRadius.circular(15), // Rounded corners
+                            border: Border.all(
+                              color: Colors.blueAccent, // Border color
+                              width: 2, // Border thickness
+                            ),
+                          ),
+                          child: ElevatedButton(
+                            onPressed: () {
+                              // used Find Buttom Deals to Going Another Page...
+                            },
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              backgroundColor:
+                                  Colors.blueAccent, // Button text color
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(
+                                    15), // Rounded button corners
+                              ),
+                            ),
+                            child: const Text("Find Best Deals >"),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              Container(
+                height: 30,
+                width: 300,
+                child: Text(
+                  "Why Choose Us",
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.cyanAccent,
+                      fontWeight: FontWeight.w900),
+                ),
+              ),
+              SizedBox(
+                height: 24,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    height: 200,
+                    width: 200,
+                    decoration: BoxDecoration(
+                        color:
+                            Colors.blueGrey[200], // Optional background color
+                        borderRadius: BorderRadius.circular(9),
+                        border: Border.all(color: Colors.black)),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.search,
+                            color: Colors.blue,
+                            size: 35,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Comprehensive Search",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 3,
+                        ),
+                        Text("Search across multiple platforms in one go"),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 4,
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    height: 200,
+                    width: 200,
+                    decoration: BoxDecoration(
+                        color:
+                            Colors.blueGrey[200], // Optional background color
+                        borderRadius: BorderRadius.circular(9),
+                        border: Border.all(color: Colors.black)),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.attach_money_sharp,
+                            color: Colors.blue,
+                            size: 35,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Best Prices",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 3,
+                        ),
+                        Text("Get the most competitive prices in the market"),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 4,
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    height: 200,
+                    width: 200,
+                    decoration: BoxDecoration(
+                        color:
+                            Colors.blueGrey[200], // Optional background color
+                        borderRadius: BorderRadius.circular(9),
+                        border: Border.all(color: Colors.black)),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.settings_applications,
+                            color: Colors.blue,
+                            size: 35,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Verified Listings",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 3,
+                        ),
+                        Text("All listings are thoroughly verified"),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 4,
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    height: 200,
+                    width: 200,
+                    decoration: BoxDecoration(
+                        color:
+                            Colors.blueGrey[200], // Optional background color
+                        borderRadius: BorderRadius.circular(9),
+                        border: Border.all(color: Colors.black)),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.notification_add_sharp,
+                            color: Colors.blue,
+                            size: 35,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Expert Support",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 3,
+                        ),
+                        Text("Get assistance from car experts"),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 4,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 70,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Cars24",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Spinny",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Car Dekho",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Car Help",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Carwale",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 45,
+              ),
+              Container(
+                // padding: EdgeInsets.all(2),
+                height: 70,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  border: Border.all(color: Colors.black),
+                  borderRadius: BorderRadius.circular(25),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      child: Icon(
+                        Icons.directions_car_rounded,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "NEED A CAR LOAN?",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      width: 800,
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        // used Find Buttom Deals to Going Another Page...
+                      },
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: Colors.white,
+                        backgroundColor: Colors.blueAccent, // Button text color
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(
+                              15), // Rounded button corners
+                        ),
+                      ),
+                      child: const Text(
+                        "Apply Now",
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 200,
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Ansh",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Jaiswar",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Car Dekho",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Shailesh",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 70,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Jaiswar",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 100,
+              ),
+              Text(
+                "Website Owner is .... BROTHERS of [Ansh & Shailesh].",
+                style: TextStyle(
+                    backgroundColor: Colors.yellow,
+                    color: Colors.black,
+                    fontSize: 30),
+              ),
+              // Started the ned line Code Here.... PLS REMEBER THIS LINES
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
